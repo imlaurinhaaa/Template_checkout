@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://kit.fontawesome.com/db6542b74f.js" crossorigin="anonymous"></script>
     <title>Template: Checkout</title>
 </head>
+
 <body>
     <header>
         <div class="arrow-left">
@@ -14,24 +16,127 @@
         </div>
         <div class="header-content">
             <h1 class="title-header">Checkout</h1>
-        <blockquote class="text-header"><b class="b-color">Homepage </b>/ <b class="b-color">Clothing Category</b> / Checkout</blockquote>
+            <blockquote class="text-header"><b class="b-color">Homepage </b>/ <b class="b-color">Clothing Category</b> /
+                Checkout</blockquote>
         </div>
     </header>
 </body>
 <main class="main-content">
     <section class="checkout">
         <div class="icons">
-            <div class="icon-check"><h1 class="text-icon-check">1</h1></div>
-            <div class="line-icon"><hr></div>
-            <div class="icon"><h1 class="text-icon">2</h1></div>
-            <div class="line-icon"><hr></div>
-            <div class="icon"><h1 class="text-icon">3</h1></div>
+            <div class="icon-check">
+                <h1 class="text-icon-check">1</h1>
+            </div>
+            <div class="line-icon">
+                <hr>
+            </div>
+            <div class="icon">
+                <h1 class="text-icon">2</h1>
+            </div>
+            <div class="line-icon">
+                <hr>
+            </div>
+            <div class="icon">
+                <h1 class="text-icon">3</h1>
+            </div>
         </div>
         <div class="text-icon-container">
-            <p class="title-icon">Delivery</p>
-            <p class="title-icon">Payment</p>
-            <p class="title-icon">Confirmation</p>
+            <p class="title-icon1">Delivery</p>
+            <p class="title-icon2">Payment</p>
+            <p class="title-icon3">Confirmation</p>
         </div>
+
+        <form>
+            <legend>Contact Information</legend>
+            <fieldset class="fieldset-contact">
+                <div class="form-container">
+                    <label for="nome">First Name</label>
+                    <input type="text" id="nome" name="nome" placeholder="First Name" required maxlength="100">
+                </div>
+
+                <div class="form-container">
+                    <label for="nome">Last Name</label>
+                    <input type="text" id="nome" name="nome" placeholder="Last Name" required maxlength="100">
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset-contact">
+
+                <div class="form-container">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email@gmail.com" required>
+                </div>
+
+                <div class="form-container">
+                    <label for="idade">Phone Number</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="+1-(0000 000 0000)"
+                        required>
+                </div>
+            </fieldset>
+
+            <legend>Delivery Information</legend>
+            <fieldset class="fieldset-delivery">
+
+                <div class="form-container">
+                    <label class="label-delivery" for="delevery-date">Delivery Date</label>
+                    <input type="date" id="delivery-date" name="delivery-date" required>
+                </div>
+
+                <div class="form-container">
+                    <label class="label-delivery" for="convenient-time">Convenient Time</label>
+                    <input type="time" id="convenient-time" name="convenient-time" required>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="fieldset-delivery">
+
+                <div class="form-container">
+                    <label class="label-delivery" for="city">City</label>
+                    <select id="city" name="city" required>
+                        <option value="sao-paulo">São Paulo</option>
+                        <option value="rio-de-janeiro">Rio de Janeiro</option>
+                        <option value="belo-horizonte">Belo Horizonte</option>
+                        <option value="brasilia">Brasília</option>
+                        <option value="salvador">Salvador</option>
+                        <option value="curitiba">Curitiba</option>
+                        <option value="porto-alegre">Porto Alegre</option>
+                        <option value="fortaleza">Fortaleza</option>
+                        <option value="recife">Recife</option>                            
+                        <option value="manaus">Manaus</option>
+                        <option value="goiania">Goiânia</option>
+                        <option value="vitoria">Vitória</option>                            
+                        <option value="florianopolis">Florianópolis</option>
+                        <option value="natal">Natal</option>
+                        <option value="joao-pessoa">João Pessoa</option>
+                        <option value="teresina">Teresina</option>
+                        <option value="aracaju">Aracaju</option>
+                        <option value="maceio">Maceió</option>
+                        <option value="palmas">Palmas</option>
+                        <option value="belem">Belém</option>
+                        <option value="sao-luis">São Luís</option>                            
+                        <option value="porto-velho">Porto Velho</option>
+                        <option value="rio-branco">Rio Branco</option>
+                        <option value="macapa">Macapá</option>
+                        <option value="boa-vista">Boa Vista</option>
+                        <option value="campo-grande">Campo Grande</option>
+                    </select>
+                </div>
+
+                <div class="form-container">
+                    <label class="label-delivery" for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Click to find Address" required
+                        maxlength="100">
+                </div>
+
+                <div class="form-container">
+                    <label class="label-delivery" for="zip-code">Zip Code</label>
+                    <input type="text" id="zip-code" name="zip-code" placeholder="00000" required>
+                </div>
+            </fieldset>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
     </section>
 
 
@@ -39,4 +144,5 @@
         <h1>Order</h1>
     </section>
 </main>
+
 </html>
